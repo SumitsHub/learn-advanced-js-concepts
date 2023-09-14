@@ -63,3 +63,7 @@ Arithmetic Operators
   For example, in the expression a && (b + c), if a is falsy, then the sub-expression (b + c) will not even get evaluated, even if it is grouped and therefore has higher precedence than &&. We could say that the logical AND operator (&&) is "short-circuited".
   Along with logical AND, other short-circuited operators include logical OR (||), nullish coalescing (??), and optional chaining (?.).
   When evaluating a short-circuited operator, the left operand is always evaluated. The right operand will only be evaluated if the left operand cannot determine the result of the operation.
+
+## Coercion -
+
+Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers).
