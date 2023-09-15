@@ -79,3 +79,5 @@ Uses - while sending data to server (earlier XML was used), in config files
   "adult": true
 }
 ```
+
+When function is called, execution context gets created
