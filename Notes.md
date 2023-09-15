@@ -69,3 +69,13 @@ Arithmetic Operators
 Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers).
 
 # Section 3 - Objects and Functions
+
+JSON - Javascript Object Notation
+Uses - while sending data to server (earlier XML was used), in config files
+
+```json
+{
+  "firstName": "Marry",
+  "adult": true
+}
+```
