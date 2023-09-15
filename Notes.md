@@ -67,3 +67,5 @@ Arithmetic Operators
 ## Coercion -
 
 Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers).
+
+# Section 3 - Objects and Functions
