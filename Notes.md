@@ -81,3 +81,9 @@ Uses - while sending data to server (earlier XML was used), in config files
 ```
 
 When function is called, execution context gets created
+
+## 'this' keyword
+
+By default 'this' keyword points to global 'Window' variable
+Value of 'this' inside a function in global context will also refer to Window object
+Value of 'this' inside an object will be that object itself
