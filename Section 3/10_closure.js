@@ -66,3 +66,19 @@ fs[1](); // 1
 fs[2](); // 2
 
 // Explanation -> let keyword has block scope
+
+// Closure with setTimeout
+
+function sayHelloLater() {
+  var greeting = "Hello";
+
+  setTimeout(function () {
+    console.log(greeting);
+  }, 3000);
+}
+
+sayHelloLater(); // prints Hello after 3 seconds
+// after 3 seconds function passed to setTimeout has access to it's outer scope
+
+/** First-Class Function */
+// A programming language is said to have First-class functions if functions in that language are treated like other variables. So the functions can be assigned to any other variable or passed as an argument or can be returned by another function.
