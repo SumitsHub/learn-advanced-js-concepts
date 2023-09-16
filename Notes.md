@@ -109,5 +109,8 @@ Javascript is multi-paradigm programming language
 
 It is sub type of Delarative Programming Paradigm
 Usefull Sites -
+
 [underscore](https://underscorejs.org/)
 [lodash](https://lodash.com/)
+
+These libraries uses functional programming and provides lot of helper functions without extending any built-in objects.
