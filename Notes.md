@@ -39,6 +39,15 @@ By default JS is single threaded (one line at a time) and Synchronous (in order)
 5. Boollean - true, false
 6. Symbol
 
+## types typeof operator returns
+
+1. 'undefined'
+2. 'number'
+3. 'string'
+4. 'object'
+5. 'function'
+6. 'boolean'
+
 ## Operators - A special function that is syntactically (written) different
 
 Arithmetic Operators
@@ -88,6 +97,23 @@ By default 'this' keyword points to global 'Window' variable
 Value of 'this' inside a function in global context will also refer to Window object
 Value of 'this' inside an object will be that object itself
 
+## 'arguments' keyword
+
+Special type of Object which contains arguments passed to the function at the time of calling
+It is not Array though it looks like, it's Arguments object and it also has 'length' property
+
+```js
+function func(...args) {
+  console.log(args);
+  console.log(arguments);
+  console.log(typeof args); // 'object'
+  console.log(typeof arguments); // 'object'
+  //   console.log(arguments.map()); // TypeError -> map is not a function
+}
+func("loren", "desuja");
+console.log(func.length); // number of arguments, 0 -> spread operatot
+```
+
 ## First class function
 
 Simply refers to the concept of Function being an Object in JS.
@@ -114,3 +140,15 @@ Usefull Sites -
 [lodash](https://lodash.com/)
 
 These libraries uses functional programming and provides lot of helper functions without extending any built-in objects.
+
+## Section 4 - Classical Inheritance and Prototypal Inheritance
+
+### Prototype of an Object -
+
+1. Prototype of an Object is also an Object, containing various implicit properties and methods
+2. Prototype of an object is kind of similar to context where object will look into for any property starting from it's own prototype to inner-most
+3. We can change prototype of any object and also add new properties to it
+
+### Reflection
+
+An object can look at itself, listing and changing its properties and methods
