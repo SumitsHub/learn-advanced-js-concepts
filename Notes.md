@@ -87,3 +87,27 @@ When function is called, execution context gets created
 By default 'this' keyword points to global 'Window' variable
 Value of 'this' inside a function in global context will also refer to Window object
 Value of 'this' inside an object will be that object itself
+
+## First class function
+
+Simply refers to the concept of Function being an Object in JS.
+We can use functions similar to objects, like passing as an argument to another function
+
+## Programming paradigms -
+
+### Declarative Paradigm
+
+You don't write logic
+
+### Imperative Paradigm
+
+You specify the logic
+
+Javascript is multi-paradigm programming language
+
+## Functional Programming
+
+It is sub type of Delarative Programming Paradigm
+Usefull Sites -
+(underscore)[https://underscorejs.org/]
+(lodash)[https://lodash.com/]
