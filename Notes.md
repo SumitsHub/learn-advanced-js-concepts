@@ -175,3 +175,23 @@ function Person() {
 console.log(new Person()); // return empty Person object
 console.log(Person()); // return Window object, when new keyword not used
 ```
+
+### Polyfill
+
+- code that adds a feature which the engine may lack
+- Example for browser don't has Object.create()
+
+```js
+if (!Object.create) {
+  Object.create = function (o) {
+    if (arguments.length > 1) {
+      throw new Error(
+        "Object.create implementation only accepts the first parameter"
+      );
+    }
+    function F() {}
+    F.prototype = o;
+    return new F();
+  };
+}
+```
