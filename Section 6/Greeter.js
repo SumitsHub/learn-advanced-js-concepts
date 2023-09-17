@@ -69,6 +69,21 @@
 
       return this;
     },
+
+    HTMLGreeting: function (selector, formal) {
+      if (!$) {
+        throw "jQuery not found";
+      }
+      var msg;
+      if (formal) {
+        msg = this.formalGreeting();
+      } else {
+        msg = this.greeting();
+      }
+
+      $(selector).html(msg);
+      return this;
+    },
   };
 
   Greeter.init = function (firstName, lastName, lanuage) {
