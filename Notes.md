@@ -166,3 +166,12 @@ An object can look at itself, listing and changing its properties and methods
 - A normal function that is used to construct objects
 - The 'this' variable points to a new empty object, and that object is returned from the function automatically
 - Important - 'new' keyword need to used while invoking function otherwise it won't return anything i.e. it will be undefined
+
+```js
+function Person() {
+  return this;
+}
+
+console.log(new Person()); // return empty Person object
+console.log(Person()); // return Window object, when new keyword not used
+```
