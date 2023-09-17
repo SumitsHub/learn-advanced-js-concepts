@@ -205,7 +205,7 @@ A different way to type something that doesn't change how it works under the hoo
 can be on the top of the file or inside function definition
 
 ```js
-// "use strict";
+"use strict";
 var person;
 
 // persom = { name: "Aline" }; // ReferenceError, because of strict mode
