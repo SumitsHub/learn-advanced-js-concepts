@@ -199,3 +199,22 @@ if (!Object.create) {
 ### Syntactic Sugar
 
 A different way to type something that doesn't change how it works under the hood
+
+### use strict
+
+can be on the top of the file or inside function definition
+
+```js
+// "use strict";
+var person;
+
+// persom = { name: "Aline" }; // ReferenceError, because of strict mode
+
+function useStrictMode() {
+  "use strict";
+  var name;
+  nane = "Sunny"; // ReferenceError, because of strict mode
+}
+
+useStrictMode();
+```
