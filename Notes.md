@@ -148,6 +148,12 @@ These libraries uses functional programming and provides lot of helper functions
 1. Prototype of an Object is also an Object, containing various implicit properties and methods
 2. Prototype of an object is kind of similar to context where object will look into for any property starting from it's own prototype to inner-most
 3. We can change prototype of any object and also add new properties to it
+4. Saving memory using prototype - When we add any property to prototype of object then it becomes available to all the instance of that object as a static , whereas if we add same property in object itself then every time object instance is created memory will be allocated to store that particular property
+
+#### Standard definition from https://developer.mozilla.org
+
+- Every object in JavaScript has a built-in property, which is called its prototype.
+- The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
 
 ### Reflection
 
