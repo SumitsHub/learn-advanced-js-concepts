@@ -230,3 +230,12 @@ useStrictMode();
 
 - variables declared with the 'let' keyword will be stores into 'lexical environment' of that particular block
 - variables declared with the 'var' keyword will be stored into 'variable environment'
+
+### Binding
+
+The connection (pointer) between a variable name and a specific location in the computer's memory location that holds a value
+
+### Immutable
+
+- Something that cannot be changed
+- const keyword creates variable that cannot be changed
