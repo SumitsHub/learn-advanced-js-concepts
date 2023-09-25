@@ -218,3 +218,15 @@ function useStrictMode() {
 
 useStrictMode();
 ```
+
+# Understanding ES6 and Beyond
+
+## Block Scope
+
+- Scope limited to particular block, In JS block is created using curly braces
+- Each block has it's Lexical Environment in Execution Context
+
+### let keyword
+
+- variables declared with the 'let' keyword will be stores into 'lexical environment' of that particular block
+- variables declared with the 'var' keyword will be stored into 'variable environment'
