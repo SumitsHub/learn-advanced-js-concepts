@@ -257,3 +257,34 @@ console.log(fullName === fullName2); // true
 - Interpolation -> Replacing portions of strings with other strings. You 'insert' or 'inject' string into another string.
 
 ### Tagged template literals
+
+```js
+function greetTemplate(strings, firstName, lastName) {
+  console.log(strings); // Array of non interpolated strings -> ['Hello, ', ' ', '']
+  console.log(firstName); // Tony
+  console.log(lastName); // Alicea
+
+  // returning custom value from tagged template literal, if not returned anything the output of tagged template will be undefined
+  return `${strings[0]}${firstName}. Your last name is ${lastName}.`;
+}
+
+const greetings = greetTemplate`Hello, ${firstName} ${lastName}`;
+console.log(greetings); // Hello, Tony. Your last name is Alicea.
+```
+
+## ES6 Classes
+
+- A structure in a programming language that provides a way to create objects
+- Classes in JS are just functions which creates objects with syntactic sugar
+- Classes created using class keyword are the same as objects created using constructor functions (remember, we need to use new keyword with constructor functions)
+- there is not special type of class in JS, it is a function
+
+```js
+class A {}
+
+console.log(typeof A); // function
+```
+
+### Instance
+
+The actual object created from an object creation feature (like a class or constructor functions)
