@@ -292,6 +292,9 @@ The actual object created from an object creation feature (like a class or const
 ## Arrow Functions
 
 - x:->x2 (mathemetical)
+- Arrow functions don't have this keyword in their execution context, so they refer to it's outer execution context
+
+- From Docs ->
 - An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
 
 - 1. Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
