@@ -288,3 +288,12 @@ console.log(typeof A); // function
 ### Instance
 
 The actual object created from an object creation feature (like a class or constructor functions)
+
+## Arrow Functions
+
+- x:->x2 (mathemetical)
+- An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
+
+- 1. Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
+- 2. Arrow functions cannot be used as constructors. Calling them with new throws a TypeError. They also don't have access to the new.target keyword.
+- 3. Arrow functions cannot use yield within their body and cannot be created as generator functions.
