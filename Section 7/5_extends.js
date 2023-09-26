@@ -9,6 +9,7 @@ class Person {
 }
 
 class Tony extends Person {
+  // implicit call to super()
   meet() {
     return "Nice to meet you.";
   }
