@@ -239,3 +239,21 @@ The connection (pointer) between a variable name and a specific location in the 
 
 - Something that cannot be changed
 - const keyword creates variable that cannot be changed
+
+## Templates
+
+- whitespace characters -> space, tabs, new lines
+- multi-line strings using templates
+
+```js
+// multi-line string using template
+const fullName = "Tony\nAlicea";
+const fullName2 = `Tony
+Alicea`;
+
+console.log(fullName === fullName2); // true
+```
+
+- Interpolation -> Replacing portions of strings with other strings. You 'insert' or 'inject' string into another string.
+
+### Tagged template literals
