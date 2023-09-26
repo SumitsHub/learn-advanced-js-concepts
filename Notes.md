@@ -300,3 +300,9 @@ The actual object created from an object creation feature (like a class or const
 - 1. Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
 - 2. Arrow functions cannot be used as constructors. Calling them with new throws a TypeError. They also don't have access to the new.target keyword.
 - 3. Arrow functions cannot use yield within their body and cannot be created as generator functions.
+
+## Symbols
+
+Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. [from docs]
+
+- well-known Symbols/ Built-in symbols: All static properties of the Symbol constructor are Symbols themselves, whose values are constant across realms. They are known as well-known Symbols.
