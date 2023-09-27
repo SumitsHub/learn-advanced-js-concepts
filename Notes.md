@@ -306,3 +306,18 @@ The actual object created from an object creation feature (like a class or const
 Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. [from docs]
 
 - well-known Symbols/ Built-in symbols: All static properties of the Symbol constructor are Symbols themselves, whose values are constant across realms. They are known as well-known Symbols.
+
+## Section 8 - Iterators and Iterables
+
+- Iteration - Repeating a block of code, often by moving through a list or sequence of values. for ex. looping through array
+
+- Enumerable - A property which will appear when looping over the properties of an object (its 'enumerable' flog is set to true)
+  The term comes from mathematics, where it means 'countable'
+
+### Iteration Protocol
+
+The information that must be provided by an object to let itself be iterated over
+
+### Iterate over
+
+To move from value to value across a set or list of values
