@@ -9,7 +9,7 @@ let numbers = {
           nextValue++;
           return nextObj;
         }
-        return { value: nextValue, dont: true };
+        return { value: nextValue, done: true };
       },
     };
   },
