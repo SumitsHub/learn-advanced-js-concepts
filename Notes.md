@@ -36,7 +36,7 @@ By default JS is single threaded (one line at a time) and Synchronous (in order)
 2. null
 3. String - 'value' or "value"
 4. Number - floating point numbers
-5. Boollean - true, false
+5. Boolean - true, false
 6. Symbol
 
 ## types typeof operator returns
@@ -47,6 +47,7 @@ By default JS is single threaded (one line at a time) and Synchronous (in order)
 4. 'object'
 5. 'function'
 6. 'boolean'
+7. 'symbol'
 
 ## Operators - A special function that is syntactically (written) different
 
