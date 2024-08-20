@@ -12,7 +12,7 @@ console.log(fullName === fullName2); // true
 const greet = `Hello, ${firstName} ${lastName}`;
 console.log(greet); // Hello, Tonny Alicea
 
-// tagged template literal
+//* tagged template literal
 
 function greetTemplate(strings, firstName, lastName) {
   console.log(strings); // Array of non interpolated strings -> ['Hello, ', ' ', '']
@@ -26,11 +26,13 @@ function greetTemplate(strings, firstName, lastName) {
 const greetings = greetTemplate`Hello, ${firstName} ${lastName}`;
 console.log(greetings); // Hello, Tony. Your last name is Alicea.
 
-/** Acheiving standard template literanl behavior but using tagged template */
+//** Achieving standard template literal behavior but using tagged template */
 
 function customTemplate(strings, ...args) {
-  let i,
-    output = "";
+  let i;
+  let output = "";
+  console.log(strings);
+  
   for (i = 0; i < strings.length - 1; i++) {
     output += strings[i] + args[i];
   }
@@ -39,3 +41,4 @@ function customTemplate(strings, ...args) {
 }
 
 console.log(customTemplate`How are you ${firstName}?`); // How are you Tony?
+console.log(customTemplate`${firstName}, How are you?`); // How are you Tony?

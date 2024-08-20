@@ -1,5 +1,5 @@
 /** arguments and spread */
-// Aruguments - paramters passed to a function
+// Arguments - parameters passed to a function
 
 function func(firstName, lastName) {
   console.log(firstName);
@@ -12,13 +12,13 @@ function func(firstName, lastName) {
 
 func("Loren", "Zuu");
 
-/** Spread operator */
+/** Rest operator */
 function func2(...args) {
   console.log(args);
   console.log(typeof args); //object
 }
 
-func2("Loren", "Zuu");
+func2(...["Loren", "Zuu"]); // spread operator
 
 /** Playing with typeof operator */
 console.log(typeof func); // function

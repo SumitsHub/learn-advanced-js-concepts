@@ -6,19 +6,19 @@
 // Variable environment - where the variables live and how they relate to each other
 
 function a() {
-  var myVar; // redeclaring variable with value undefined
-  console.log("a", myVar); // udefined -> local variable
+  var myVar; // re-declaring variable with value undefined
+  console.log("a", myVar); // undefined -> local variable
 }
 
 function a2() {
-  console.log("a2", myVar); // 2 -> refering to global variable
+  console.log("a2", myVar); // 2 -> referring to global variable
 }
 
 function b() {
-  var myVar = 2; // redeclaring variable with value 2, here myVar becomes local variable for function b
+  var myVar = 2; // re-declaring variable with value 2, here myVar becomes local variable for function b
   a();
   a2();
-  console.log("b", myVar); // 2 -> refering to local variable
+  console.log("b", myVar); // 2 -> referring to local variable
 }
 
 function c() {
@@ -53,3 +53,17 @@ function y() {
 var temp = 2;
 var temp2 = 3;
 y();
+
+//* Lexical Scoping - starts from inner scope to global scope
+
+let a = 10; // global scope
+function outer() {
+  let b = 20;
+  function inner() {
+    let c = 30;
+    console.log(a, b, c);
+  }
+  inner();
+}
+
+outer();

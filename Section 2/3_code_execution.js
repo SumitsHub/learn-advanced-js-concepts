@@ -1,4 +1,4 @@
-/* Javascript and 'underfined' */
+/* Javascript and 'undefined' */
 
 // undefined - value JS assigns to variables at the time of creation phase when declared variable without any value
 // i.e. default value of JS variable is 'undefined'

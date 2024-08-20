@@ -1,5 +1,5 @@
 /** By Value vs By Reference */
-// By value (premitive type)
+// By value (primitive type)
 
 var a = 10;
 var b = a;

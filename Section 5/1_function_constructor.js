@@ -1,4 +1,4 @@
-/** Constructer function */
+/** Constructor function */
 
 function Human() {}
 

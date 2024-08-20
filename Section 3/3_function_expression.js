@@ -4,6 +4,7 @@ function greet() {
   console.log("Heyy");
 }
 
+// functions as object
 greet.language = "English";
 
 console.log(greet.language); // English

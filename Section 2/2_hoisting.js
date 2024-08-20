@@ -1,6 +1,6 @@
 // As per ECMAScript Hoistable Declarations - function, function*, async function, and async function* declarations.
 // Official Definition - JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
-/* Exection Context - Creation and Hoisting */
+/* Execution Context - Creation and Hoisting */
 
 console.log(a); // OUTPUT- undefined
 console.log(b()); // OUTPUT- Hey, called me?
@@ -21,7 +21,7 @@ var c = function () {
 // 1. Value Hoisting - being able to use a variable's value in its scope before the line it is declared
 // Example - function, function*, async function, and async function*
 
-// 2. Declaration Hoisting - being able to reference a variable in its scope before the line it is declared, without thrwoing a ReferenceError
+// 2. Declaration Hoisting - being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError
 // Example - var declarations
 
 // 3. Lexical declarations - the declaration of the variable causes behavior changes in its scope before the line in which it is declared

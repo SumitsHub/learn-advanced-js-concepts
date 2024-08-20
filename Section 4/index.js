@@ -18,7 +18,7 @@ john.__proto__ = person;
 console.log(john);
 console.log(john.getFullName());
 
-console.log(person.prototype); // undefined
+console.log(person.prototype); // undefined - for object literal?
 
 for (var key in john) {
   console.log(key, john.hasOwnProperty(key));

@@ -1,4 +1,7 @@
-# Syntax Parser
+## About Repo
+- this repos follows Udemy course "JavaScript: Understanding ES6 and Beyond" by "Anthony Alicea"
+
+## Syntax Parser
 
 A program that reads your code and determines what it does and if its grammar is valid
 

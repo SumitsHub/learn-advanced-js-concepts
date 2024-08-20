@@ -14,7 +14,7 @@ var checkLimit = function (limiter) {
 
 console.log(arr.map(checkLimit(3)));
 
-// can be simplified in follwing way -
+// can be simplified in following way -
 var checkLimit2 = function (limiter) {
   return function (item) {
     return item > limiter;

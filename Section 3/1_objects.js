@@ -6,6 +6,7 @@ person["lastName"] = "Alicea";
 var firstNameProperty = "firstName";
 
 console.log(person);
+// dynamic key
 console.log(person[firstNameProperty]); // Tonny
 
 // using . (dot) operator - member access operator

@@ -1,4 +1,4 @@
-// someone else's code
+// ...someone else's code
 
 class Person {
   firstName = "Tony";
@@ -24,7 +24,7 @@ tony.__proto__.greet = function () {
 console.log(tony.greet()); // Hello Tony
 
 // Symbol
-const s = Symbol("Monkey");
+const s = Symbol("Monkey"); // Returns a new unique Symbol value.
 const p = Symbol("Monkey");
 
 console.log(s);
@@ -57,7 +57,7 @@ let obj = {
 
 console.log(obj[fname]);
 
-// global symbols
+// Symbol.for - Returns a Symbol object from the global symbol registry matching the given key if found. Otherwise, returns a new symbol with this key.
 const HAIR_STRAIGHT = Symbol.for("Straight");
 const HAIR_CURLY = Symbol.for("Curly");
 const HAIR_WAVY = Symbol.for("Wavy");
@@ -65,5 +65,10 @@ const HAIR_WAVY = Symbol.for("Wavy");
 let curly = Symbol.for("Curly");
 console.log(curly === HAIR_CURLY); // true
 
-// getting description of Symbol
+//* getting description of Symbol
+// using keyFor - Returns a key from the global symbol registry matching the given Symbol if found. Otherwise, returns a undefined.
 console.log(Symbol.keyFor(HAIR_WAVY)); // Wavy
+
+// using description property
+console.log(HAIR_STRAIGHT.description); // Straight
+console.log(typeof HAIR_CURLY.description); // string
