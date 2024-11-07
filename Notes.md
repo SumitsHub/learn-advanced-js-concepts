@@ -65,7 +65,7 @@ Arithmetic Operators
 - Decrement (--) - Unary operator. Subtracts one from its operand. The return value is analogous to that for the increment operator.
 - Unary negation (-) - Unary operator. Returns the negation of its operand.
 - Unary plus (+) - Unary operator. Attempts to convert the operand to a number, if it is not already. ex. +"2" -> 2, +true -> 1
-- Exponentioan operator (\*\*) - Calculates the base to the exponent power, that is, base^exponent
+- Exponential operator (\*\*) - Calculates the base to the exponent power, that is, base^exponent
 
 ## Operator Precedence and Associativity
 

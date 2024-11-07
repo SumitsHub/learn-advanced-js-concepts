@@ -23,7 +23,7 @@ console.log(person.address);
 console.log(person["address"]["city"]); // New York
 
 // Object Literals
-var person = {}; // similar to var person = new Object()
+var person = {}; // same as var person = new Object()
 
 console.log(person);
 

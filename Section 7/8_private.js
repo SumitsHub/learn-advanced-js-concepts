@@ -48,4 +48,4 @@ p.displayPrivateInfo(); // id is 1
 
 // p.#getPrivateInfo(); // SyntaxError -> private field must be declared in and enclosing class
 
-// IMP -> $ sign indicates private field, hence we don't get undefiend or reference error
+// IMP -> # sign indicates private field, hence we don't get undefined or reference error

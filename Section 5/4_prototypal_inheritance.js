@@ -19,7 +19,7 @@ john.firstName = "John";
 console.log(john.greet()); // Hi John
 
 // using .prototype to set prototype
-// Important - .prototype is not available when object is created using object literal, use constructor function
+//* Important - .prototype is not available when object is created using 'object literal', use constructor function
 var anthony = { firstName: "Anthony" };
 console.log(anthony.prototype); // undefined
 

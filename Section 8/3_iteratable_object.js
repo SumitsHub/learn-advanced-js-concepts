@@ -1,4 +1,4 @@
-/** Makeing iterable object using Symbol.iterator */
+/** Making iterable object using Symbol iterator */
 
 let numbers = {
   [Symbol.iterator]: function () {

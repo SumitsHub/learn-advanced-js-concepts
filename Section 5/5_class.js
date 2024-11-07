@@ -18,7 +18,7 @@ class ChildPerson extends Person {
 
 var john = new Person("John", "Doe");
 
-console.log(john);
+console.log(john); // 
 
 var mike = new ChildPerson("Mike", "Smith");
 console.log(mike); // ChildPerson class with Person class prototype

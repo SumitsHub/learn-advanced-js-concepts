@@ -46,5 +46,5 @@ for (var key in arr) {
   3
   myCustomProperty
   
-  NOTE- Don't use for in loop with array, use standard for loop instead
+  NOTE- Don't use for in loop with array, use standard 'for' loop OR 'for-of' loop instead
   */

@@ -3,6 +3,9 @@ class A {}
 console.log(typeof A); // function
 
 let B = class {};
+console.log(B); // class {}
+let bObj = new B();
+console.log(bObj); // B {}
 
 function Person() {
   this.name = "Someone";

@@ -6,7 +6,7 @@ var human = new Human();
 console.log(human); // Human {} -> empty object
 
 // invoking function constructor without new keyword
-var h = Human();
+var h = Human(); // normal function call which doesn't return anything
 console.log(h); // undefined
 
 function Person(firstName, lastName) {

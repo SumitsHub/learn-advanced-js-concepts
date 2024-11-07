@@ -35,8 +35,11 @@ function func(name, ...args) {
   console.log(args); // []
   console.log(arguments); // { '0': 'loren', '1': 'Something' }
   console.log(typeof args); // 'object'
+  console.log(Array.isArray(args)); // true
   console.log(typeof arguments); // 'object'
-  //   console.log(arguments.map()); // TypeError -> map is not a function
+  console.log(Array.isArray(arguments)); // false
+
+  // console.log(arguments.map()); // TypeError -> map is not a function
 }
 func('loren');
 func('loren', 'Something');

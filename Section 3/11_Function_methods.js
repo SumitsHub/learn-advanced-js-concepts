@@ -15,7 +15,6 @@ var person = {
   bind(thisArg, arg1, arg2)
   bind(thisArg, arg1, arg2,  …,  argN)
   
-  
   */
 var logName = function () {
   console.log(this.getFullName());
@@ -49,10 +48,10 @@ const boundLog = log.bind("this value", 1, 2);
 const boundLog2 = boundLog.bind("new this value", 3, 4);
 boundLog2(5, 6); // {"this value"}, 1, 2, 3, 4, 5, 6
 
-// call() -> calls function with specified value of this and list of arguments
+// call() -> calls function with specified value of 'this' and list of arguments
 log.call(person, "en", "es");
 
-// apply() -> similar to call(), it accepts arguments in array
+// apply() -> similar to call(), it accepts arguments in an array
 log.apply(person, ["en", "es"]);
 
 // call() with IIFE
@@ -70,7 +69,7 @@ var person2 = {
 console.log(person.getFullName.apply(person2)); // Sunny Leone
 
 /** Function Currying - using bind */
-// Creating a copy of a function but with some preset paramters
+// Creating a copy of a function but with some preset parameters
 function multiply(a, b) {
   return a * b;
 }

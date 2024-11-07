@@ -9,8 +9,15 @@ var c = {
     function setName(newName) {
       this.name = newName; // here 'this' refers to global object, kinda bug
     }
+
+    // FIX:
+    // const setName = newName => {
+    //   this.name = newName; // here 'this' refers to global object, kinda bug
+    // };
     setName("New name updated");
   },
 };
 
-c.log(); //
+console.log(c.name); // The c Object
+c.log();
+console.log(c.name); // The c Object

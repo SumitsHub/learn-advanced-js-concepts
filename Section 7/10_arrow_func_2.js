@@ -23,7 +23,7 @@ let obj = {
   firstName: "Tony",
   name: "Object",
   printName() {
-    console.log(this.name); // Object -> refers to this objects name property
+    console.log(this.name); // Object -> refers to this object's name property - NOTE: iff this function will be called with this object
   },
   greet() {
     console.log(this.firstName); // Tony

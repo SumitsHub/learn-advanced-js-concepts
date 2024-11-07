@@ -10,11 +10,11 @@ class Person {
   }
 
   // static property
-  static residance = "Earth";
+  static residence = "Earth";
 
   // static method
   static morning() {
-    console.log(this.residance); // accessing static field inside another
+    console.log(this.residence); // accessing static field inside another
     return "Good morning";
   }
 }

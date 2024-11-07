@@ -1,4 +1,4 @@
-// Function Object -> Functions are object
+// Function Object -> Functions are object - First Class Functions
 
 function greet() {
   console.log("Heyy");
@@ -22,12 +22,13 @@ console.log(a);
 /** Function statement */
 // using this inside function
 function sayHi() {
-  console.log(this); // Window object\
+  console.log(this); // Window object
 }
-// sayHi();
+// sayHi(); // calling in the global context -> window.sayHi() -> hence 'this' will point to 'window' object
+// window.sayHi();
 
 /** function expression */
-// anonymousFunction(); // ERROR -> because it's undefined
+// anonymousFunction(); // ERROR -> because it's undefined -> only declarations get hoisted not value
 
 var anonymousFunction = function () {
   console.log("This is an anonymous function");
@@ -36,7 +37,7 @@ var anonymousFunction = function () {
 anonymousFunction();
 console.log(anonymousFunction.name); // anonymousFunction
 
-// passing function as paramter
+// passing function as parameter
 function call(callback) {
   callback(); // Hello
 }

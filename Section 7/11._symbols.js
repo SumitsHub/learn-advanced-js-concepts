@@ -27,7 +27,7 @@ console.log(tony.greet()); // Hello Tony
 const s = Symbol("Monkey"); // Returns a new unique Symbol value.
 const p = Symbol("Monkey");
 
-console.log(s);
+console.log(s); // 
 console.log(typeof s); // symbol
 
 console.log(s === p); // false

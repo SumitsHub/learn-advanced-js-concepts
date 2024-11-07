@@ -10,7 +10,7 @@ class Person {
 
 class Tony extends Person {
   constructor(name) {
-    super(name); // calls parent class constructor
+    super(name); // calls parent class constructor -> required to call super() if defining constructor in child class
   }
 
   // overriding parent class function

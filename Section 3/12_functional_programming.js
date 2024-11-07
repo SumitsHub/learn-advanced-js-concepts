@@ -23,4 +23,4 @@ var checkLimit2 = function (limiter) {
 
 console.log(arr.map(checkLimit2(3)));
 
-// LEARNING - bind() can be used when we need to pass implicit default argument
+//* LEARNING - bind() can be used when we need to pass implicit default argument

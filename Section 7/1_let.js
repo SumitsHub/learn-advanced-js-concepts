@@ -9,7 +9,7 @@ let lastName = "Alicea";
 console.log(firstName); // Anthony
 
 /** let with switch case */
-
+// NOTE: switch is having it's block, but case don't
 switch (firstName) {
   case "Anthony":
     console.log(lastName);
@@ -46,4 +46,4 @@ for (person of person.firstNames) {
 
 console.log(person); // Tony -> person object gets reassigned with last firstName of person inside for loop
 
-// Note - variables declared with let leyword gets hoisted but can't be accessed before declaration
+// Note - variables declared with let keyword gets hoisted but can't be accessed before declaration

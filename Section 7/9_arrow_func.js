@@ -6,7 +6,7 @@ let add2 = (a, b) => {
   return a + b;
 };
 
-// IIAFE -> Immedietly invoked arrow function expression
+// IIAFE -> Immediately Invoked Arrow Function Expression
 (() => {
   console.log("Heyy");
 })(); // Heyy
