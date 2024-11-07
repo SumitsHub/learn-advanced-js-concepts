@@ -33,3 +33,6 @@ console.log(console.log("Heyy")); // console.log returns undefined
 
 // IMP -> static fields don't get added to prototype of object
 console.log(Person.prototype);
+
+
+//* add about static block

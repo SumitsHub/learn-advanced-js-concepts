@@ -26,6 +26,7 @@ function c() {
   a2(); // log 4
 }
 
+// declaring global variable
 var myVar = 1;
 b();
 
@@ -34,7 +35,7 @@ console.log("global", myVar); // 1
 c();
 
 // Important - every execution context has reference to it's outer environment[lexical environment]
-// JS first looks for it's execution context then looks into outer environment till the last one
+// JS first looks for it's own execution context then looks into outer environment till the last one (Global environment)
 
 // Scope Chain
 

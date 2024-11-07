@@ -1,11 +1,12 @@
 /** Comparison operator */
 
-console.log(1 < 2 < 3); // true : false < 3 = true
+// Left to Right associativity
+console.log(1 < 2 < 3); // true -> false < 3 = true
 
-console.log(1 > 2 > 3); // false : false > 3 = false
+console.log(1 > 2 > 3); // false -> false > 3 = false
 
 console.log(3 > 2); // true
-console.log(3 > 2 > 1); // false : true > 1 --> 1 > 1 = false
+console.log(3 > 2 > 1); // false -> true > 1 --> 1 > 1 == false
 
 console.log(false <= 0); // true
 
@@ -30,7 +31,7 @@ if ("Something" && 0 === 0) {
   console.log("True");
 }
 
-// Default values
+// Default parameter value [E6 Feature]
 function greet(name = "User") {
   console.log("Hello " + name);
 }

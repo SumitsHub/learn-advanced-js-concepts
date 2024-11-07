@@ -15,4 +15,4 @@ document.addEventListener("click", clickHandler);
 waitThreeSeconds();
 console.log("finished execution");
 
-// JS completes execution stack first then goes for event queue
+// JS completes "Execution Stack" first then goes for "Event Queue"

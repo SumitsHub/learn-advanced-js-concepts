@@ -13,6 +13,7 @@ function b() {
   return 'Hey, called me?';
 }
 
+// function expression
 var c = function () {
   console.log('Heyy from function c');
 };
@@ -37,7 +38,7 @@ let x = 1;
 {
   console.log(x);
 
-  //   let x = 2; -> ReferenceError
+  //   let x = 2; -> ReferenceError - (not accessible because of "Temporal Dead Zone")
 }
 
 const y = 1;
